@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Rubik:wght@400;500&display=swap");
+
+:root {
+  --primary: #713fff;
+  --secondary: #3c184e;
+  --white: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: var(--secondary);
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  color: var(--secondary);
+}
+
+.fullscreen {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.content {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 0;
+  height: 64px;
+}
+
+header h2 {
+  font-weight: 500;
+  cursor: default;
+}
+
+main {
+  width: 520px;
+  height: calc(100vh - 64px);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.title {
+  font-family: "Merriweather", serif;
+  font-size: 64px;
+}
+
+.highlight {
+  position: relative;
+}
+
+.highlight::after {
+  content: "";
+  position: absolute;
+  bottom: -24px;
+  left: 0;
+  background-image: url("./imgs/highlight.png");
+  width: 239px;
+  height: 24px;
+}
+
+.description {
+  margin: 42px 0;
+}
+
+.actions {
+  display: flex;
+  gap: 16px;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 140px;
+  height: 42px;
+  transition: filter 0.2s ease-in-out;
+}
+
+.btn:hover {
+  filter: brightness(0.8);
+}
+
+.filled {
+  background-color: var(--primary);
+  color: var(--white);
+  border-radius: 40px;
+}
+
+.dog-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.dog-wrapper > img {
+  position: absolute;
+  right: 0;
+}
+
+.dogfood {
+  left: -790px;
+  top: 490px;
+}
